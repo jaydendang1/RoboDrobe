@@ -29,7 +29,7 @@ html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
     </div>
   </div>
   <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="My Account">
-    <img src="/69315356_964383423953616_4388433618381307904_n.jpg" class="w3-circle" style="height:23px;width:23px" alt="Avatar">
+    <img src="/69450494_1506540979488772_5809637871425945600_n.jpg" class="w3-circle" style="height:23px;width:23px" alt="Avatar">
   </a>
  </div>
 </div>
@@ -55,9 +55,9 @@ html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
          <p class="w3-center"><img src="/
 69450494_1506540979488772_5809637871425945600_n.jpg" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
          <hr>
-         <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> Designer, UI</p>
-         <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> London, UK</p>
-         <p><i class="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme"></i> April 1, 1988</p>
+         <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> Moneky, UI</p>
+         <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> MonkeyIsland, Springvale</p>
+         <p><i class="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme"></i> retard</p>
         </div>
       </div>
       <br>
