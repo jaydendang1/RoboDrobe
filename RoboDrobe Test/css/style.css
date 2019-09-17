@@ -52,3 +52,14 @@ ul li a:hover{
 .title h1{
   color: #000;
 }
+
+
+
+
+
+footer {
+  font-size: 0.8em;
+  margin: 0;
+  padding: 0 0 20px;
+  color: #fff;
+}

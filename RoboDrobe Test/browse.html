@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <link rel="stylesheet" type="text/css" href="css/browsestyle.css">
+</head>
+<div class="header" id="myHeader">
+  <div class="logosmall">
+    <h1>
+    <a href="index.html"><img src="logosmall.png" alt="homelink"></a>
+    </h1>
+  </div>
+
+</div>
+<div class="pagelinks">
+  <ul2>
+    <li><b><a href="index.html">HOME</a></b></li>
+    <li><b><a href="CLOTHING.html">CLOTHING</a></b></li>
+    <li><b><a href="BLOG.html">BLOG</a></b></li>
+    <li><b><a href="CONTACT.html">CONTACT US</a></b></li>
+  </ul2>
+</div>
+
+<div class="parallax"></div>
+
+  <body>
+    <div class="clothes">
+    <div id="myBtnContainer">
+      <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+      <button class="btn" onclick="filterSelection('tops')"> Tops</button>
+      <button class="btn" onclick="filterSelection('bottoms')"> Bottoms</button>
+      <button class="btn" onclick="filterSelection('shoes')"> Shoes</button>
+    </div>
+
+    <!-- Portfolio Gallery Grid -->
+    <div class="row">
+      <div class="column tops">
+        <div class="content">
+          <img src="browseimg/IMBOMBER.png" alt="isseyparachute" style="width:100%">
+          <h4>Issey Miyake</h4>
+          <p>Parachute bomber</p>
+          <p><a href="https://www.grailed.com/listings/1891763-issey-miyake-aw96-parachute-cargo-ma-1-bomber">check availability</a></p>
+        </div>
+      </div>
+      <div class="column tops">
+        <div class="content">
+        <img src="browseimg/CGCOAT.png" alt="Lights" style="width:100%">
+          <h4>Canada Goose</h4>
+          <p>Hooded parka</p>
+          <p><a href="https://www.farfetch.com/au/shopping/men/canada-goose-hooded-parka-item-13696154.aspx?storeid=9462">check availability</a></p>
+        </div>
+      </div>
+      <div class="column tops">
+        <div class="content">
+        <img src="browseimg/JWASWEAT.png" alt="tops" style="width:100%">
+          <h4>J.W. Anderson</h4>
+          <p>Chunky sweater</p>
+          <p><a href="https://www.farfetch.com/au/shopping/men/jw-anderson-striped-chunky-knit-jumper-item-14100340.aspx?storeid=9359">check availability</a></p>
+        </div>
+      </div>
+
+      <div class="column bottoms">
+        <div class="content">
+          <img src="browseimg/ROSHORTS.png" alt="Car" style="width:100%">
+          <h4>Rick Owens</h4>
+          <p>Drawstring shorts</p>
+          <p><a href="https://www.farfetch.com/au/shopping/men/rick-owens-drawstring-shorts-item-14457359.aspx?storeid=9918">check availability</a></p>
+        </div>
+      </div>
+      <div class="column bottoms">
+        <div class="content">
+        <img src="browseimg/APCJEANS.png" alt="Car" style="width:100%">
+          <h4>A.P.C.</h4>
+          <p>Straight-leg jeans</p>
+          <p><a href="https://www.farfetch.com/au/shopping/men/apc-straight-leg-jeans-item-12760524.aspx?storeid=9031">check availability</a></p>
+        </div>
+      </div>
+      <div class="column bottoms">
+        <div class="content">
+        <img src="browseimg/JCARGOS.png" alt="Car" style="width:100%">
+          <h4>Julius</h4>
+          <p>Cargo tapered trousers</p>
+          <p><a href="https://www.farfetch.com/au/shopping/men/julius-cargo-tapered-trousers-item-13449678.aspx?storeid=10243">check availability</a></p>
+        </div>
+      </div>
+
+      <div class="column shoes">
+        <div class="content">
+          <img src="browseimg/PCBURST.png" alt="Car" style="width:100%">
+          <h4>Prada</h4>
+          <p>Cloudburst sneakers</p>
+          <p><a href="https://www.farfetch.com/au/shopping/men/prada-cloudburst-sneakers-item-14107260.aspx?storeid=9359">check availability</a></p>
+        </div>
+      </div>
+      <div class="column shoes">
+        <div class="content">
+        <img src="browseimg/AMBOOT.png" alt="Car" style="width:100%">
+          <h4>Alexander Mcqueen</h4>
+          <p>Chunky soled leather Chelsea boots</p>
+          <p><a href="https://www.farfetch.com/au/shopping/men/alexander-mcqueen-chunky-soled-leather-chelsea-boots-item-13358293.aspx?storeid=9359">check availability</a></p>
+        </div>
+      </div>
+      <div class="column shoes">
+        <div class="content">
+        <img src="browseimg/VFLAMES.png" alt="Car" style="width:100%">
+          <h4>Vans</h4>
+          <p>fire streak lace-up sneakers</p>
+          <p><a href="https://www.farfetch.com/au/shopping/men/vans-fire-streak-lace-up-sneakers-item-12162700.aspx?storeid=11218">check availability</a></p>
+        </div>
+      </div>
+    <!-- END GRID -->
+    </div>
+
+    <!-- END MAIN -->
+    </div>
+
+    <script>
+    filterSelection("all")
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("column");
+      if (c == "all") c = "";
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+    }
+
+    function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+      }
+    }
+
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);
+        }
+      }
+      element.className = arr1.join(" ");
+    }
+
+
+    // Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function(){
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+    </script>
+
+  </body>
+</html>
