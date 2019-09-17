@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/designstyle.css">
+  </head>
+  <div class="header" id="myHeader">
+    <div class="logosmall">
+      <h1>
+      <a href="index.html"><img src="logosmall.png" alt="homelink"></a>
+      </h1>
+    </div>
+  </div>
+  <div class="pagelinks">
+    <ul2>
+      <li><b><a href="index.html">HOME</a></b></li>
+      <li><b><a href="CLOTHING.html">CLOTHING</a></b></li>
+      <li><b><a href="BLOG.html">BLOG</a></b></li>
+      <li><b><a href="CONTACT.html">CONTACT US</a></b></li>
+    </ul2>
+  </div>
+
+  <div class="parallax"></div>
+  <body>
+    <div class="outfit">
+      <h1>OUTFIT CREATOR</h1>
+      <h2>TOPS, BOTTOMS AND SHOES</h2>
+      <b><p>see staff picks for competition details</p></b>
+    </div>
+    <div class="wrapper">
+        <div class="box">
+          <div id="task1" class="task" draggable="true">
+            <button onclick="copy()" type="image" name="button"><img src="browseimg/CGCOAT.png" height="250" width="250"></button>
+          </div>
+          <div id="task2" class="task" draggable="true">
+             <button onclick="copy1()" type="image" name="button"><img src="browseimg/IMBOMBER.png" alt="" height="250" width="250"></button>
+          </div>
+          <div id="task3" class="task" draggable="true">
+             <button onclick="copy2()" type="image" name="button"><img src="browseimg/JWASWEAT.png" alt="" height="250" width="250"></button>
+          </div>
+        </div>
+        <div class="box1" id="copytest">
+          <img style="display:none; margin: auto;" id="CGCOAT" src="browseimg/CGCOAT.png" alt="" height="400" width="400">
+          <img style="display:none; margin: auto;" id="IMBOMBER" src="browseimg/IMBOMBER.png" alt="" height="400" width="400">
+          <img style="display:none; margin: auto;" id="JWASWEAT" src="browseimg/JWASWEAT.png" alt="" height="400" width="400">
+        </div>
+      </div>
+      <div class="wrapper">
+          <div class="box">
+            <div id="task4" class="task" draggable="true">
+              <button onclick="copy3()" type="image" name="button"><img src="browseimg/APCJEANS.png" height="250" width="250"></button>
+            </div>
+            <div id="task5" class="task" draggable="true">
+               <button onclick="copy4()" type="image" name="button"><img src="browseimg/JCARGOS.png" alt="" height="250" width="250"></button>
+            </div>
+            <div id="task6" class="task" draggable="true">
+               <button onclick="copy5()" type="image" name="button"><img src="browseimg/ROSHORTS.png" alt="" height="250" width="250"></button>
+            </div>
+          </div>
+          <div class="box1" id="copytest">
+            <img style="display:none; margin: auto;" id="APCJEANS" src="browseimg/APCJEANS.png" alt="" height="400" width="400">
+            <img style="display:none; margin: auto;" id="JCARGOS" src="browseimg/IMBOMBER.png" alt="" height="400" width="400">
+            <img style="display:none; margin: auto;" id="ROSHORTS" src="browseimg/JWASWEAT.png" alt="" height="400" width="400">
+          </div>
+        </div>
+        <div class="wrapper">
+            <div class="box">
+              <div id="tas74" class="task" draggable="true">
+                <button onclick="copy6()" type="image" name="button"><img src="browseimg/PCBURST.png" height="250" width="250"></button>
+              </div>
+              <div id="task8" class="task" draggable="true">
+                 <button onclick="copy7()" type="image" name="button"><img src="browseimg/AMBOOT.png" alt="" height="250" width="250"></button>
+              </div>
+              <div id="task9" class="task" draggable="true">
+                 <button onclick="copy8()" type="image" name="button"><img src="browseimg/VFLAMES.png" alt="" height="250" width="250"></button>
+              </div>
+            </div>
+            <div class="box1" id="copytest">
+              <img style="display:none; margin: auto;" id="PCBURST" src="browseimg/APCJEANS.png" alt="" height="250" width="250">
+              <img style="display:none; margin: auto;" id="AMBOOT" src="browseimg/IMBOMBER.png" alt="" height="250" width="250">
+              <img style="display:none; margin: auto;" id="VFLAMES" src="browseimg/JWASWEAT.png" alt="" height="250" width="250">
+            </div>
+          </div>
+
+
+      <script>
+        function copy() {
+          var sourceOfPicture = "browseimg/CGCOAT.png";
+          var img = document.getElementById('CGCOAT');
+          img.src = sourceOfPicture.replace('CGCOAT', 'CGCOATBG');
+          img.style.display = "block";
+          var img1 = document.getElementById('IMBOMBER');
+          img1.style.display = "none";
+              var img2 = document.getElementById('JWASWEAT');
+          img2.style.display = "none";
+        }
+        function copy1() {
+          var sourceOfPicture = "browseimg/IMBOMBER.png";
+          var img = document.getElementById('IMBOMBER');
+          img.src = sourceOfPicture.replace('IMBOMBER', 'IMBOMBERBG');
+          img.style.display = "block";
+          var img1 = document.getElementById('CGCOAT');
+          img1.style.display = "none";
+          var img2 = document.getElementById('JWASWEAT');
+          img2.style.display = "none";
+        }
+        function copy2() {
+          var sourceOfPicture = "browseimg/JWASWEAT.png";
+          var img = document.getElementById('JWASWEAT');
+          img.src = sourceOfPicture.replace('JWASWEAT', 'JWASWEATBG');
+          img.style.display = "block";
+          var img1 = document.getElementById('CGCOAT');
+          img1.style.display = "none";
+          var img2 = document.getElementById('IMBOMBER');
+          img2.style.display = "none";
+        }
+        function copy3() {
+          var sourceOfPicture = "browseimg/APCJEANS.png";
+          var img = document.getElementById('APCJEANS');
+          img.src = sourceOfPicture.replace('APCJEANS', 'APCJEANSBG');
+          img.style.display = "block";
+          var img1 = document.getElementById('JCARGOS');
+          img1.style.display = "none";
+          var img2 = document.getElementById('ROSHORTS');
+          img2.style.display = "none";
+        }
+        function copy4() {
+          var sourceOfPicture = "browseimg/JCARGOS.png";
+          var img = document.getElementById('JCARGOS');
+          img.src = sourceOfPicture.replace('JCARGOS', 'JCARGOSBG');
+          img.style.display = "block";
+          var img1 = document.getElementById('APCJEANS');
+          img1.style.display = "none";
+          var img2 = document.getElementById('ROSHORTS');
+          img2.style.display = "none";
+        }
+        function copy5() {
+          var sourceOfPicture = "browseimg/ROSHORTS.png";
+          var img = document.getElementById('ROSHORTS');
+          img.src = sourceOfPicture.replace('ROSHORTS', 'ROSHORTSBG');
+          img.style.display = "block";
+          var img1 = document.getElementById('APCJEANS');
+          img1.style.display = "none";
+          var img2 = document.getElementById('JCARGOS');
+          img2.style.display = "none";
+        }
+        function copy6() {
+          var sourceOfPicture = "browseimg/PCBURST.png";
+          var img = document.getElementById('PCBURST');
+          img.src = sourceOfPicture.replace('PCBURST', 'PCBURSTBG');
+          img.style.display = "block";
+          var img1 = document.getElementById('AMBOOT');
+          img1.style.display = "none";
+          var img2 = document.getElementById('VFLAMES');
+          img2.style.display = "none";
+        }
+        function copy7() {
+          var sourceOfPicture = "browseimg/AMBOOT.png";
+          var img = document.getElementById('AMBOOT');
+          img.src = sourceOfPicture.replace('AMBOOT', 'AMBOOTBG');
+          img.style.display = "block";
+          var img1 = document.getElementById('PCBURST');
+          img1.style.display = "none";
+          var img2 = document.getElementById('VFLAMES');
+          img2.style.display = "none";
+        }
+        function copy8() {
+          var sourceOfPicture = "browseimg/VFLAMES.png";
+          var img = document.getElementById('VFLAMES');
+          img.src = sourceOfPicture.replace('VFLAMES', 'VFLAMESBG');
+          img.style.display = "block";
+          var img1 = document.getElementById('PCBURST');
+          img1.style.display = "none";
+          var img2 = document.getElementById('AMBOOT');
+          img2.style.display = "none";
+        }
+      </script>
+
+  </body>
+</html>
