@@ -1,8 +1,208 @@
-﻿body {
-    background-color: #f0f0f0;
+﻿* {
+    margin: 0;
     font-family: sans-serif;
-    
 }
+
+/* CLOTHING PAGE SECTION */
+.logosmall img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+    ul2 li {
+        display: inline-block;
+    }
+
+        ul2 li a {
+            text-decoration: none;
+            color: #000;
+            padding: 5px 15px;
+            border: 1px solid transparent;
+            transition: 0.5s ease;
+        }
+
+            ul2 li a:hover {
+                background-color: #000;
+                color: #fff;
+            }
+
+.pagelinks {
+    top: 75px;
+    height: 50px;
+    width: 100%;
+    /* STYLING */
+    background: #FFF;
+    color: #f2f2f2;
+    display: table;
+    position: absolute;
+    border: 1px solid #000;
+}
+
+.header {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    top: -1px;
+    width: 100%;
+    background: #FFF;
+    border: 1px solid #000;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url(raff.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.heading1 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.headings {
+    padding-bottom: 25px;
+    font-size: 110%;
+}
+
+    .headings h1 {
+        float: left;
+    }
+
+    .headings h2 {
+        float: none;
+        margin-right: 500px;
+    }
+
+    .headings h3 {
+        float: right;
+    }
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 33.33%;
+    padding: 5px;
+    position: relative;
+    text-decoration: none;
+}
+
+    .column .btn1 {
+        position: absolute;
+        top: 50%;
+        left: 16%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: #000;
+        color: WHITE;
+        font-size: 16px;
+        padding: 12px 24px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+
+        .column .btn1:hover {
+            background-color: WHITE;
+            border: 1px solid transparent;
+            transition: 0.5s ease;
+            color: BLACK;
+        }
+
+    .column .btn2 {
+        position: absolute;
+        top: 50%;
+        left: 49.25%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: #000;
+        color: WHITE;
+        font-size: 16px;
+        padding: 12px 24px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+        .column .btn2:hover {
+            background-color: WHITE;
+            border: 1px solid transparent;
+            transition: 0.5s ease;
+            color: BLACK;
+        }
+
+    .column .btn3 {
+        position: absolute;
+        top: 50%;
+        left: 82.75%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: #000;
+        color: WHITE;
+        font-size: 16px;
+        padding: 12px 24px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+        .column .btn3:hover {
+            background-color: WHITE;
+            border: 1px solid transparent;
+            transition: 0.5s ease;
+            color: BLACK;
+        }
+
+
+
+
+.parallax {
+    height: 90vh;
+    width: 100%;
+    display: table;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../parallax1.png);
+}
+
+.parallax2 {
+    background-image: url(../img/NS.jpg);
+    height: 50vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax3 {
+    background-image: url(../img/bricks.jpg);
+    height: 50vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
 
 .loginbox {
     width: 320px;
